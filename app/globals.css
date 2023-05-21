@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+div::-webkit-scrollbar {
+  width: 0.5em;
+  display: none;
+  crusor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+div:hover::-webkit-scrollbar {
+  display: block;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+div::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 0.25em;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background-color: #d1d5db;
+}
+
+div::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
+}
+
+.ag-theme-material {
+  --ag-border: none;
+  --ag-foreground-color: #042f2e;
+  --ag-background-color: #ffffff;
+  --ag-header-foreground-color: #f0fdfa;
+  --ag-header-background-color: #0d9488;
+  --ag-odd-row-background-color: #f0fdfa;
+  --ag-header-column-resize-handle-color: #f8fafc;
+  --ag-selected-row-background-color: #ccfbf1;
+  --ag-grid-size: 0.5rem;
+  --ag-list-item-height: 1rem;
+
+  --ag-font-size: 1rem;
 }
