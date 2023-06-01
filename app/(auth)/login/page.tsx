@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const LoginComponent: React.FC = () => {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-300 via-teal-200 to-gray-300 dark:from-gray-700 dark:via-teal-800 dark:to-gray-700 px-4 sm:px-0'>
+     <div className='flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-gray-300 via-teal-200 to-gray-300 px-4 dark:from-gray-700 dark:via-teal-800 dark:to-gray-700 sm:px-0'>
       <div className='w-full max-w-md'>
         <Card title='Login'>
           <div className='mb-4'>
